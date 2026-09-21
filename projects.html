@@ -1,89 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projekte | My Website</title>
+
+  <title>Projects | David Breitkreuz</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Main stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
+
+
 <body>
+
+
+  <!-- ===== Navigation ===== -->
+
   <nav class="navbar">
-  <div class="nav-top">
-    <a href="index.html" class="logo">My Website</a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Navigation öffnen">☰</button>
-  </div>
 
-  <ul class="nav-links" id="navLinks">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="projects.html" class="active">Projects</a></li>
-    <li><a href="travel.html">Travel</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
+    <div class="nav-container">
 
-  <main class="page-content">
-  <h1>My Projects</h1>
+      <a href="index.html" class="logo">
+        David Breitkreuz
+      </a>
 
-  <div class="projects-grid">
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation"
+      >
+        ☰
+      </button>
 
-<div class="project-card">
-  <img src="images georgia/ski-tour-III.jpeg" alt="My first website">
+      <ul class="nav-links" id="navLinks">
 
-  <h2>My First Website</h2>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
 
-  <p>
-    A website built with HTML, CSS and JavaScript. It includes navigation,
-    responsive design, and a collapsible mobile menu.
-  </p>
+        <li>
+          <a href="cv.html">CV</a>
+        </li>
 
-  <div class="tag-list">
-    <span class="tag">HTML</span>
-    <span class="tag">CSS</span>
-    <span class="tag">JavaScript</span>
-    <span class="tag">GitHub Pages</span>
-  </div>
+        <li>
+          <a href="education.html">Education</a>
+        </li>
 
-  <a href="project-first-website.html" class="button-link">View Project</a>
-</div>
-<div class="project-card">
-  <img src="images georgia/Khinkali.jpeg" alt="Project 2">
+        <li>
+          <a href="projects.html" class="active">Projects</a>
+        </li>
 
-  <h2>Projekt 2</h2>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
 
-  <p>
-    Hier kommt später ein weiteres Projekt. Zum Beispiel eine App oder eine interaktive Seite.
-  </p>
+      </ul>
 
-  <div class="tag-list">
-    <span class="tag">HTML</span>
-    <span class="tag">CSS</span>
-    <span class="tag">JavaScript</span>
-  </div>
+    </div>
 
-  <a href="#" class="button-link">View Project</a>
-</div>
+  </nav>
 
-<div class="project-card">
-  <img src="images/beispielbild.jpg" alt="Project 3">
 
-  <h2>Projekt 3</h2>
+  <!-- ===== Projects Header ===== -->
 
-  <p>
-    Platzhalter für zukünftige Projekte. Kann später durch echte Inhalte ersetzt werden.
-  </p>
+  <header class="projects-header">
 
-  <div class="tag-list">
-    <span class="tag">HTML</span>
-    <span class="tag">CSS</span>
-    <span class="tag">JavaScript</span>
-  </div>
+    <div class="projects-header-inner">
 
-  <a href="#" class="button-link">View Project</a>
-</div>
-    
-  </div>
-</main>
-<script src="script.js"></script>
+      <span class="projects-label">
+        Projects
+      </span>
+
+      <h1>
+        Selected Work
+      </h1>
+
+      <p>
+        A selection of engineering projects spanning composite materials,
+        lightweight structures, manufacturing and digital process development.
+      </p>
+
+    </div>
+
+  </header>
+
+
+  <!-- ===== Projects ===== -->
+
+  <main class="projects-overview">
+
+
+    <!-- ===== Project 01 ===== -->
+
+    <article class="project-row">
+
+      <a
+        class="project-row-image"
+        href="project-master-thesis.html"
+      >
+        <img
+          src="images/projects/master-thesis.png"
+          alt="Composite-metal joining master thesis"
+        >
+      </a>
+
+
+      <div class="project-row-content">
+
+        <span class="project-row-number">
+          01
+        </span>
+
+        <span class="project-row-category">
+          COMPOSITES · STRUCTURAL DESIGN
+        </span>
+
+        <h2>
+          Composite-Metal Joining
+        </h2>
+
+        <p>
+          Development and evaluation of joining concepts for
+          composite-metal structures, combining CAD, FEM and
+          mechanical testing.
+        </p>
+
+        <a
+          class="project-row-link"
+          href="project-master-thesis.html"
+        >
+          View project →
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- ===== Project 02 ===== -->
+
+    <article class="project-row">
+
+      <a
+        class="project-row-image"
+        href="project-bachelor-thesis.html"
+      >
+        <img
+          src="images/projects/bachelor-thesis.jpg"
+          alt="Composite manufacturing bachelor thesis"
+        >
+      </a>
+
+
+      <div class="project-row-content">
+
+        <span class="project-row-number">
+          02
+        </span>
+
+        <span class="project-row-category">
+          COMPOSITES · MANUFACTURING
+        </span>
+
+        <h2>
+          Composite Manufacturing &amp; Permeability
+        </h2>
+
+        <p>
+          Investigation of hybrid nonwovens in fibre-reinforced
+          composite manufacturing with a focus on increasing
+          permeability.
+        </p>
+
+        <a
+          class="project-row-link"
+          href="project-bachelor-thesis.html"
+        >
+          View project →
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- ===== Project 03 ===== -->
+
+    <article class="project-row">
+
+      <a
+        class="project-row-image"
+        href="project-wakeboard.html"
+      >
+        <img
+          src="images/projects/wakeboard/wakeboard-hero.jpg"
+          alt="Composite wakeboard"
+        >
+      </a>
+
+
+      <div class="project-row-content">
+
+        <span class="project-row-number">
+          03
+        </span>
+
+        <span class="project-row-category">
+          COMPOSITES · DESIGN &amp; MANUFACTURING
+        </span>
+
+        <h2>
+          Composite Wakeboard
+        </h2>
+
+        <p>
+          Team-based design and hands-on manufacturing of a
+          fibre-reinforced wakeboard using glass fibre,
+          nonwovens and carbon fibre.
+        </p>
+
+        <a
+          class="project-row-link"
+          href="project-wakeboard.html"
+        >
+          View project →
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- ===== Project 04 ===== -->
+
+    <article class="project-row">
+
+      <a
+        class="project-row-image"
+        href="project-rocket-glider.html"
+      >
+        <img
+          src="images/projects/rocket-glider.png"
+          alt="Carbon-fibre rocket glider"
+        >
+      </a>
+
+
+      <div class="project-row-content">
+
+        <span class="project-row-number">
+          04
+        </span>
+
+        <span class="project-row-category">
+          LIGHTWEIGHT STRUCTURES · COMPOSITES
+        </span>
+
+        <h2>
+          Carbon-Fibre Rocket Glider
+        </h2>
+
+        <p>
+          Design and hands-on manufacturing of a lightweight
+          carbon-fibre rocket glider as part of a team-based
+          engineering project.
+        </p>
+
+        <a
+          class="project-row-link"
+          href="project-rocket-glider.html"
+        >
+          View project →
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- ===== Project 05 ===== -->
+
+    <article class="project-row">
+
+      <a
+        class="project-row-image"
+        href="project-sap-bi.html"
+      >
+        <img
+          src="images/projects/sap-bi.png"
+          alt="SAP and business intelligence project"
+        >
+      </a>
+
+
+      <div class="project-row-content">
+
+        <span class="project-row-number">
+          05
+        </span>
+
+        <span class="project-row-category">
+          SYSTEMS · DATA · PROCESS DEVELOPMENT
+        </span>
+
+        <h2>
+          SAP &amp; BI Integration
+        </h2>
+
+        <p>
+          Development of a structured reporting workflow connecting
+          operational SAP data with business intelligence tools.
+        </p>
+
+        <a
+          class="project-row-link"
+          href="project-sap-bi.html"
+        >
+          View project →
+        </a>
+
+      </div>
+
+    </article>
+
+
+  </main>
+
+
+  <!-- ===== Footer ===== -->
+
+  <footer class="site-footer">
+
+    <div class="site-footer-inner">
+      David Breitkreuz — Copenhagen, Denmark
+    </div>
+
+  </footer>
+
+
+  <!-- ===== JavaScript ===== -->
+
+  <script src="script.js"></script>
+
+
 </body>
+
 </html>

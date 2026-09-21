@@ -3,38 +3,150 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | My Website</title>
+  <title>David Breitkreuz | Production & Materials Engineer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
  <nav class="navbar">
-  <div class="nav-top">
-    <a href="index.html" class="logo">My Website</a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Navigation öffnen">☰</button>
-  </div>
+  <div class="nav-container">
 
-  <ul class="nav-links" id="navLinks">
-    <li><a href="index.html" class="active">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="travel.html">Travel</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
+    <a href="index.html" class="logo">David Breitkreuz</a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+  </div>
 </nav>
 
-  <header class="hero">
-    <div class="hero-content">
-      <div class="hero-text">
-        <h1>Welcome to my first website</h1>
-        <p>I am currently learning HTML, CSS, JavaScript, and GitHub.</p>
-        <a class="button-link" href="projects.html">Show my projects</a>
+<header class="hero">
+  <div class="hero-content">
+
+    <div class="hero-text">
+      <h1>David Breitkreuz</h1>
+
+      <h2>Production & Materials Engineer</h2>
+
+      <p>
+        Production & Materials Engineer with a background in composite materials,
+        lightweight structures and mechanical design. Experience in composite
+        manufacturing, mechanical testing and product development.
+      </p>
+
+      <a class="button-link" href="projects.html">View Projects</a>
+      <a class="button-link" href="cv.html">View CV</a>
+    </div>
+
+    <div class="hero-image">
+      <img src="images/beispielbild.jpg" alt="Portrait of David Breitkreuz">
+    </div>
+
+  </div>
+</header>
+<main class="home-sections">
+
+  <!-- ===== Experience ===== -->
+  <section class="home-section">
+    <div class="section-number">01</div>
+
+    <div class="section-content">
+      <h2>Experience</h2>
+
+      <div class="home-entry">
+        <div>
+          <h3>Associate Production Design Transfer Engineer</h3>
+          <p class="entry-company">Abbott · Hamburg</p>
+        </div>
+        <span class="entry-date">2023</span>
       </div>
 
-      <div class="hero-image">
-        <img src="images/beispielbild.jpg" alt="Porträt oder Projektbild">
+      <div class="home-entry">
+        <div>
+          <h3>Master Thesis — Structural Design & Materials Engineering</h3>
+          <p class="entry-company">Volvo Bussar AB · Gothenburg</p>
+        </div>
+        <span class="entry-date">2022</span>
       </div>
+
+      <a class="section-link" href="cv.html">View full experience →</a>
     </div>
-  </header>
+  </section>
+
+
+  <!-- ===== Education ===== -->
+  <section class="home-section">
+    <div class="section-number">02</div>
+
+    <div class="section-content">
+      <h2>Education</h2>
+
+      <div class="home-entry">
+        <div>
+          <h3>M.Sc. Production & Materials Engineering</h3>
+          <p class="entry-company">Lund University</p>
+        </div>
+        <span class="entry-date">2020–2022</span>
+      </div>
+
+      <div class="home-entry">
+        <div>
+          <h3>B.Sc. Industrial Engineering</h3>
+          <p class="entry-company">University of Augsburg</p>
+        </div>
+        <span class="entry-date">2016–2020</span>
+      </div>
+
+      <a class="section-link" href="education.html">View education →</a>
+    </div>
+  </section>
+
+
+  <!-- ===== Selected Projects ===== -->
+  <section class="home-section">
+    <div class="section-number">03</div>
+
+    <div class="section-content">
+      <h2>Selected Projects</h2>
+
+      <div class="project-preview-grid">
+
+        <a class="project-preview" href="projects.html">
+          <span class="project-type">COMPOSITES · DESIGN & MANUFACTURING</span>
+          <h3>Composite Wakeboard</h3>
+          <p>
+            Design and manufacturing of a fibre-reinforced composite
+            wakeboard as part of a university engineering project.
+          </p>
+        </a>
+
+        <a class="project-preview" href="projects.html">
+          <span class="project-type">LIGHTWEIGHT STRUCTURES · COMPOSITES</span>
+          <h3>Carbon-Fibre Rocket Glider</h3>
+          <p>
+            Team-based design and hands-on manufacturing of a lightweight
+            carbon-fibre rocket glider.
+          </p>
+        </a>
+
+      </div>
+
+      <a class="section-link" href="projects.html">View all projects →</a>
+    </div>
+  </section>
+
+</main>
 <script src="script.js"></script>
 </body>
 </html>

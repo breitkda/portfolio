@@ -1,35 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | My Website</title>
+
+  <!-- Keep portfolio out of search-engine indexes -->
+  <meta name="robots" content="noindex, nofollow">
+
+  <title>Contact | David Breitkreuz</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+  <!-- Navigation -->
   <nav class="navbar">
-  <div class="nav-top">
-    <a href="index.html" class="logo">My Website</a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Navigation öffnen">☰</button>
-  </div>
+    <div class="nav-container">
 
-  <ul class="nav-links" id="navLinks">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="travel.html">Travel</a></li>
-    <li><a href="contact.html" class="active">Contact</a></li>
-  </ul>
-</nav>
+      <a href="index.html" class="logo">
+        David Breitkreuz
+      </a>
 
-  <main class="page-content">
-    <h1>Contact</h1>
-    <p>You can contact me here.</p>
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation"
+      >
+        ☰
+      </button>
 
-    <button id="infoButton">Show contact</button>
-    <p id="message"></p>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+
+    </div>
+  </nav>
+
+
+  <!-- Contact Header -->
+  <header class="contact-header">
+
+    <div class="contact-header-inner">
+
+      <span class="contact-page-label">
+        Contact
+      </span>
+
+      <h1>Let’s get in touch.</h1>
+
+      <p>
+        Interested in discussing an opportunity, project or collaboration?
+        Send me a message directly.
+      </p>
+
+    </div>
+
+  </header>
+
+
+  <!-- Contact Form -->
+  <main class="contact-overview">
+
+    <form
+      class="contact-form"
+      action="https://formspree.io/f/DEINE-FORMSPREE-ID"
+      method="POST"
+    >
+
+      <!-- 01 Name -->
+      <div class="contact-row">
+
+        <div class="contact-row-meta">
+          <span class="contact-number">01</span>
+        </div>
+
+        <div class="contact-field">
+
+          <label for="name">
+            Name
+          </label>
+
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name"
+            autocomplete="name"
+            required
+          >
+
+        </div>
+
+      </div>
+
+
+      <!-- 02 Email -->
+      <div class="contact-row">
+
+        <div class="contact-row-meta">
+          <span class="contact-number">02</span>
+        </div>
+
+        <div class="contact-field">
+
+          <label for="email">
+            Email
+          </label>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your email address"
+            autocomplete="email"
+            required
+          >
+
+        </div>
+
+      </div>
+
+
+      <!-- 03 Message -->
+      <div class="contact-row contact-message-row">
+
+        <div class="contact-row-meta">
+          <span class="contact-number">03</span>
+        </div>
+
+        <div class="contact-field">
+
+          <label for="message">
+            Message
+          </label>
+
+          <textarea
+            id="message"
+            name="message"
+            rows="7"
+            placeholder="Tell me what you'd like to discuss..."
+            required
+          ></textarea>
+
+        </div>
+
+      </div>
+
+
+      <!-- Honeypot spam protection -->
+      <input
+        type="text"
+        name="_gotcha"
+        class="contact-honeypot"
+        tabindex="-1"
+        autocomplete="off"
+        aria-hidden="true"
+      >
+
+
+      <!-- Submit -->
+      <div class="contact-submit-row">
+
+        <div></div>
+
+        <button type="submit" class="contact-submit">
+          Send message →
+        </button>
+
+      </div>
+
+    </form>
+
+
+    <!-- Additional Contact Information -->
+    <section class="contact-elsewhere">
+
+      <div class="contact-elsewhere-number">
+        <span>04</span>
+      </div>
+
+      <div class="contact-elsewhere-content">
+
+        <span class="contact-small-label">
+          Elsewhere
+        </span>
+
+        <!-- LinkedIn link comes here once added -->
+        <a
+          href="#"
+          class="contact-linkedin"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn ↗
+        </a>
+
+        <p>
+          Copenhagen, Denmark
+        </p>
+
+      </div>
+
+    </section>
+
   </main>
 
-<script src="script.js"></script>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      David Breitkreuz — Copenhagen, Denmark
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+
 </body>
 </html>
