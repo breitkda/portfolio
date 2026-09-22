@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
 
   <title>CV | David Breitkreuz</title>
 
@@ -280,6 +281,25 @@
       font-size: 1.02rem;
       font-weight: 500;
     }
+
+    .cv-download {
+    display: inline-block;
+    margin-top: 14px;
+    margin-bottom: 28px;
+    
+    color: var(--rust);
+    font-size: 0.82rem;
+    font-weight: 500;
+    text-decoration: none;
+    
+    border-bottom: 1px solid var(--rust);
+    padding-bottom: 2px;
+}
+.cv-download:hover {
+  color: var(--blue);
+  border-bottom-color: var(--blue);
+  text-decoration: none;
+}
 
 
     /* ===== Contact ===== */
@@ -779,6 +799,14 @@
           Production &amp; Materials Engineer
         </p>
 
+        <a
+        href="documents/David_Breitkreuz_CV.pdf"
+        class="cv-download"
+        download
+        >
+        Download CV ↓
+    </a>
+
 
         <!-- Contact -->
 
@@ -798,8 +826,8 @@
 
           <li>
             <span class="k">Mail</span>
-            <a href="mailto:d.breitkreuz@gmx.de">
-              d.breitkreuz@gmx.de
+            <a href="mailto:d.breitkreuz gmx.de">
+              d.breitkreuz gmx.de
             </a>
           </li>
 
@@ -1333,13 +1361,19 @@
 
   <!-- ===== Footer ===== -->
 
-  <footer>
+<!-- FOOTER -->
+  <footer class="site-footer">
+  <div class="site-footer-inner footer-layout">
 
-    <div>
-      David Breitkreuz — Copenhagen, Denmark
+    <span>David Breitkreuz — Copenhagen, Denmark</span>
+
+    <div class="footer-links">
+      <a href="legal.html">Legal Notice</a>
+      <a href="privacy.html">Privacy</a>
     </div>
 
-  </footer>
+  </div>
+</footer>
 
 
   <!-- ===== JavaScript ===== -->

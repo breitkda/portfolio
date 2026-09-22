@@ -2254,3 +2254,124 @@ footer {
   }
 
 }
+/* =========================================================
+   LEGAL / PRIVACY
+========================================================= */
+
+.legal-page {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 70px 32px 80px;
+}
+
+.legal-header {
+  padding-bottom: 42px;
+  border-bottom: 1px solid var(--line);
+}
+
+.legal-label {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--rust);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.legal-header h1 {
+  margin: 0;
+  font-size: 2.7rem;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+
+.legal-header p {
+  max-width: 720px;
+  margin: 18px 0 0;
+  color: var(--steel);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.legal-content {
+  max-width: 760px;
+  padding-top: 20px;
+}
+
+.legal-section {
+  padding: 30px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.legal-section h2 {
+  margin: 0 0 12px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.legal-section p {
+  margin: 0 0 12px;
+  color: var(--steel);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+.legal-section p:last-child {
+  margin-bottom: 0;
+}
+
+.legal-section a {
+  color: var(--blue);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line-strong);
+}
+
+.legal-section a:hover {
+  color: var(--rust);
+  border-bottom-color: var(--rust);
+}
+
+
+/* ===== Footer Links ===== */
+
+.footer-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: var(--steel-light);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--rust);
+}
+
+
+@media (max-width: 768px) {
+
+  .legal-page {
+    padding: 44px 22px 60px;
+  }
+
+  .legal-header h1 {
+    font-size: 2.15rem;
+  }
+
+  .footer-layout {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
